@@ -21,7 +21,7 @@
 
 ​	信息收集阶段通过豆瓣网站获取影评、从百科定义中获取各个类型电影的定义。之后对百科定义进行分词、去除停用词、并且构建电影分类词典。豆瓣影评也是通过分词、去除停用词后构建评论词库。最后通过这两个词库生成属性评分，再根据属性评分进行匹配推荐。
 
-![流程图](\pic\流程图.png)
+![流程图](https://github.com/clopen/Movie-Recommendation/blob/master/pic/流程图.png)
 
 ## 环境
 
@@ -50,10 +50,10 @@
 
   #### demo
 
-  ​	爬取电影影评![爬取电影影评](\Movie-Recommendation\pic\爬取电影影评.png)
-  ​	爬取结果![爬取结果](\pic\爬取结果.png)
-  ​	爬取用户影评![爬取用户影评](\pic\爬取用户影评.png)
-  ​	爬取用户影评结果![爬取用户影评结果](\pic\爬取用户影评结果.png)
+  ​	爬取电影影评![爬取电影影评](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取电影影评.png)
+  ​	爬取结果![爬取结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取结果.png)
+  ​	爬取用户影评![爬取用户影评](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取用户影评.png)
+  ​	爬取用户影评结果![爬取用户影评结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取用户影评结果.png)
 
   ### 语料说明
 
@@ -92,10 +92,10 @@
     
     ### demo
     
-    ​	影评清洗![影评清洗](\pic\影评清洗.png)    
-    ​	影评清洗结果![影评清洗结果](\pic\影评清洗结果.png)    
-    ​	电影定义![电影定义](\pic\影定义.png)    
-    ​	电影分类词典![电影分类词典](\pic\电影分类词典.png)
+    ​	影评清洗![影评清洗](https://github.com/clopen/Movie-Recommendation/blob/master/pic/影评清洗.png)    
+    ​	影评清洗结果![影评清洗结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/影评清洗结果.png)    
+    ​	电影定义![电影定义](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影定义.png)    
+    ​	电影分类词典![电影分类词典](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影分类词典.png)
 
 
 
@@ -113,10 +113,10 @@
 
    ### demo
 
-  ​		电影-流浪地球![电影-流浪地球](\pic\电影-流浪地球.jpg)
-  ​		电影-夏洛特烦恼![电影-夏洛特烦恼](\pic\电影-夏洛特烦恼.jpg)
-  ​		用户-叶子阿姨![用户-叶子阿姨](\pic\用户-叶子阿姨.jpg)
-  ​		用户-彩蛋君![用户-彩蛋君](\pic\用户-彩蛋君.jpg)
+  ​		电影-流浪地球![电影-流浪地球](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影-流浪地球.jpg)
+  ​		电影-夏洛特烦恼![电影-夏洛特烦恼](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影-夏洛特烦恼.jpg)
+  ​		用户-叶子阿姨![用户-叶子阿姨](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-叶子阿姨.jpg)
+  ​		用户-彩蛋君![用户-彩蛋君](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-彩蛋君.jpg)
 
 
 
