@@ -103,7 +103,7 @@
 
   ​	使用方法及视频demo可以见：[Recommendation推荐过程演示](https://youtu.be/v9lWlXT02eY)
 
-  ![推荐模块流程](\pic\推荐模块.png)
+  ![推荐模块流程](https://github.com/clopen/Movie-Recommendation/blob/master/pic/推荐模块.png)
 
   ​	输入时movie-word和user-word，也就是电影评论词库和用户评论词库。输出就是用户和电影的属性以及推荐电影。
 
@@ -115,7 +115,7 @@
 
   ​		电影-流浪地球![电影-流浪地球](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影-流浪地球.jpg)
   ​		电影-夏洛特烦恼![电影-夏洛特烦恼](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影-夏洛特烦恼.jpg)
-  ​		用户-叶子阿姨![用户-叶子阿姨](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-叶子阿姨.jpg)
+  ​		用户-叶子阿姨![用户-叶子阿姨](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-叶子阿姨.jpg)  
   ​		用户-彩蛋君![用户-彩蛋君](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-彩蛋君.jpg)
 
 
