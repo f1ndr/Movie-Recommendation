@@ -120,16 +120,16 @@ module
 | 电影评论 | 豆瓣，同一电影前5页评论 | 用以确定电影属性 | 5页每页20条 |
 
   每条评论之间以等号串进行分隔。
-  
-  
-  ### 语料说明
+
+  ### Corpus Description
 
   ​	
 
-|          | 来源                    | 作用             | 数目        |
+|          | Source                  | role             | number      |
 | -------- | ----------------------- | ---------------- | ----------- |
-| 用户评论 | 豆瓣，同一用户近期评论  | 用以确定用户属性 | 10条        |
-| 电影评论 | 豆瓣，同一电影前5页评论 | 用以确定电影属性 | 5页每页20条 |
+| User comments | Douban, the same user's recent comments| 
+User attributes | 10        |
+| Film Review | Movie Review Douban, the first five pages of the same movie | Used to determine movie attributes | 5\*20 |
 
   每条评论之间以等号串进行分隔。
 
