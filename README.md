@@ -183,35 +183,22 @@ module
     
     ### demo
     
-    ​	影评清洗![影评清洗](https://github.com/clopen/Movie-Recommendation/blob/master/pic/影评清洗.png)    
-    ​	影评清洗结果![影评清洗结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/影评清洗结果.png)    
-    ​	电影定义![电影定义](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影定义.png)    
-    ​	电影分类词典![电影分类词典](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影分类词典.png)
-    
-    ### demo
-    
-    ​	Film review cleaning![Film review cleaning](https://github.com/clopen/Movie-Recommendation/blob/master/pic/影评清洗.png)    
-    ​	Result of film review cleaning![Result of film review cleaning](https://github.com/clopen/Movie-Recommendation/blob/master/pic/影评清洗结果.png)    
-    ​	Finding the Definition of Film Type![Finding the Definition of Film Type](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影定义.png)    
-    ​	Constructing a Dictionary of Film Classification![Constructing a Dictionary of Film Classification](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影分类词典.png)
+    ​	影评清洗(Film review cleaning)![影评清洗](https://github.com/clopen/Movie-Recommendation/blob/master/pic/影评清洗.png)    
+    ​	影评清洗结果(Result of film review cleaning)![影评清洗结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/影评清洗结果.png)    
+    ​	电影定义(Finding the Definition of Film Type)![电影定义](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影定义.png)    
+    ​	电影分类词典(Constructing a Dictionary of Film Classification)![电影分类词典](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影分类词典.png)
 
 
+  ## 推荐模块(Recommendation module)
 
-  ## 推荐模块
-
-  ​	使用方法及视频demo可以见：[Recommendation推荐过程演示](https://youtu.be/v9lWlXT02eY)
+  ​	使用方法及视频demo可以见(Demonstration of usage method can be seen as follows)：[Recommendation推荐过程演示](https://youtu.be/v9lWlXT02eY)
 
   ![推荐模块流程](https://github.com/clopen/Movie-Recommendation/blob/master/pic/推荐模块.png)
 
   ​	输入时movie-word和user-word，也就是电影评论词库和用户评论词库。输出就是用户和电影的属性以及推荐电影。
   
-  ## Recommendation module
-
-  ​	Demonstration of usage method can be seen as follows:[Recommendation推荐过程演示](https://youtu.be/v9lWlXT02eY)
-
-  ![推荐模块流程](https://github.com/clopen/Movie-Recommendation/blob/master/pic/推荐模块.png)
-
   ​	When input, movie-word and user-word are movie commentary thesaurus and user comment thesaurus. Output is the attributes of users,movies and the recommended movies.
+  
 
    ### 所需环境
 
@@ -227,13 +214,6 @@ module
   ​		电影-夏洛特烦恼![电影-夏洛特烦恼](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影-夏洛特烦恼.jpg)
   ​		用户-叶子阿姨![用户-叶子阿姨](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-叶子阿姨.jpg)  
   ​		用户-彩蛋君![用户-彩蛋君](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-彩蛋君.jpg)
-
-   ### demo
-
-  ​		movie-流浪地球![电影-流浪地球](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影-流浪地球.jpg)
-  ​	  movie-夏洛特烦恼![电影-夏洛特烦恼](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影-夏洛特烦恼.jpg)
-  ​		user-叶子阿姨![用户-叶子阿姨](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-叶子阿姨.jpg)  
-  ​		user-彩蛋君![用户-彩蛋君](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-彩蛋君.jpg)
 
   ## 使用说明
 
