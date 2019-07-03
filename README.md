@@ -52,6 +52,26 @@ module
 * 其中用到的库有requests库、bs4库、fake_useragent库、pkuseg库
 * 另外还需要pe文件执行环境
 
+## 环境
+
+* 整体所需要的环境是：python2、python3
+* 其中用到的库有requests库、bs4库、fake_useragent库、pkuseg库
+* 另外还需要pe文件执行环境
+
+## 语料库
+
+* 本语料库中分为“电影影评”和“用户影评”
+
+* 其中“用户影评”为一个用户近期以来的十条评论，用以确定用户的属性
+
+* 其中“电影影评”为一个电影的前五页的评论，用以确定电影的属性
+
+  如果需要增加数据，请使用user_reviews.py和movie_reviews.py爬取数据  
+  环境：  
+  python2  
+  requests库  
+  fake_useragent库（可选）
+
 ## 语料库
 
 * 本语料库中分为“电影影评”和“用户影评”
@@ -71,6 +91,18 @@ module
    	其中proxies可自行更改可用爬虫代理，所爬取到的数据存入的文件的文件名，请将open的第一个参数改为自己所需要的名称。如果需要更改爬取数目以增加识别精度，请修改final_page变量为想要的页数（用户评论一页10条，电影评论一页20条）。
   	本脚本文件使用方法可以参考youtube视频：[爬虫演示](https://youtu.be/pgurXdp_-T4)
 
+  ### 爬虫程序说明
+
+   	其中proxies可自行更改可用爬虫代理，所爬取到的数据存入的文件的文件名，请将open的第一个参数改为自己所需要的名称。如果需要更改爬取数目以增加识别精度，请修改final_page变量为想要的页数（用户评论一页10条，电影评论一页20条）。
+  	本脚本文件使用方法可以参考youtube视频：[爬虫演示](https://youtu.be/pgurXdp_-T4)
+
+  #### demo
+
+  ​	爬取电影影评![爬取电影影评](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取电影影评.png)
+  ​	爬取结果![爬取结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取结果.png)
+  ​	爬取用户影评![爬取用户影评](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取用户影评.png)
+  ​	爬取用户影评结果![爬取用户影评结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取用户影评结果.png)
+  
   #### demo
 
   ​	爬取电影影评![爬取电影影评](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取电影影评.png)
@@ -88,7 +120,23 @@ module
 | 电影评论 | 豆瓣，同一电影前5页评论 | 用以确定电影属性 | 5页每页20条 |
 
   每条评论之间以等号串进行分隔。
+  
+  
+  ### 语料说明
 
+  ​	
+
+|          | 来源                    | 作用             | 数目        |
+| -------- | ----------------------- | ---------------- | ----------- |
+| 用户评论 | 豆瓣，同一用户近期评论  | 用以确定用户属性 | 10条        |
+| 电影评论 | 豆瓣，同一电影前5页评论 | 用以确定电影属性 | 5页每页20条 |
+
+  每条评论之间以等号串进行分隔。
+
+  ### 版权说明
+
+  ​	本语料库出于非商业目的，如果有侵权，请在issue下面留言。
+  
   ### 版权说明
 
   ​	本语料库出于非商业目的，如果有侵权，请在issue下面留言。
@@ -109,9 +157,29 @@ module
   
     脚本使用方法可以见：[Data Pre Processing预处理演示](https://youtu.be/vkSzZB35240)
     
+  ## Preprocessing module
+
+  The Data Pre-Processing folder contains five automation scripts:
+
+  * Seg.py：single file word segmentation script
+  
+  * Clean.py：removes stop-word scripts
+  
+  * Dictionary.py：Building Dictionary Scripts
+  
+  * Count.py：Word Number Statistics Script
+  
+  * Whleseg.py：Batch Word Segmentation Script
+  
+    Demonstration of script usage can be seen as follows:：[Data Pre Processing预处理演示](https://youtu.be/vkSzZB35240)
+    
     ### 所需环境
     
     python3版本，需要实现安装pkuseg库。
+    
+    ### Required environment
+    
+    Python 3 and later. The pkuseg library needs to be installed.
     
     ### demo
     
@@ -119,6 +187,13 @@ module
     ​	影评清洗结果![影评清洗结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/影评清洗结果.png)    
     ​	电影定义![电影定义](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影定义.png)    
     ​	电影分类词典![电影分类词典](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影分类词典.png)
+    
+    ### demo
+    
+    ​	Film review cleaning![Film review cleaning](https://github.com/clopen/Movie-Recommendation/blob/master/pic/影评清洗.png)    
+    ​	Result of film review cleaning![Result of film review cleaning](https://github.com/clopen/Movie-Recommendation/blob/master/pic/影评清洗结果.png)    
+    ​	Finding the Definition of Film Type![Finding the Definition of Film Type](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影定义.png)    
+    ​	Constructing a Dictionary of Film Classification![Constructing a Dictionary of Film Classification](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影分类词典.png)
 
 
 
@@ -129,10 +204,22 @@ module
   ![推荐模块流程](https://github.com/clopen/Movie-Recommendation/blob/master/pic/推荐模块.png)
 
   ​	输入时movie-word和user-word，也就是电影评论词库和用户评论词库。输出就是用户和电影的属性以及推荐电影。
+  
+  ## Recommendation module
+
+  ​	Demonstration of usage method can be seen as follows:[Recommendation推荐过程演示](https://youtu.be/v9lWlXT02eY)
+
+  ![推荐模块流程](https://github.com/clopen/Movie-Recommendation/blob/master/pic/推荐模块.png)
+
+  ​	When input, movie-word and user-word are movie commentary thesaurus and user comment thesaurus. Output is the attributes of users,movies and the recommended movies.
 
    ### 所需环境
 
 ​	  	pe文件执行环境。
+
+   ### Required environment
+
+​	  	PE file execution environment
 
    ### demo
 
@@ -141,7 +228,12 @@ module
   ​		用户-叶子阿姨![用户-叶子阿姨](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-叶子阿姨.jpg)  
   ​		用户-彩蛋君![用户-彩蛋君](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-彩蛋君.jpg)
 
+   ### demo
 
+  ​		movie-流浪地球![电影-流浪地球](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影-流浪地球.jpg)
+  ​	  movie-夏洛特烦恼![电影-夏洛特烦恼](https://github.com/clopen/Movie-Recommendation/blob/master/pic/电影-夏洛特烦恼.jpg)
+  ​		user-叶子阿姨![用户-叶子阿姨](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-叶子阿姨.jpg)  
+  ​		user-彩蛋君![用户-彩蛋君](https://github.com/clopen/Movie-Recommendation/blob/master/pic/用户-彩蛋君.jpg)
 
   ## 使用说明
 
@@ -149,6 +241,11 @@ module
 
   ​	**注意：使用此批处理文件时一定需要预装好<u>整体</u>所需环境，否则会失败！！**
 
+  ## Instructions
+
+  ​	This program needs to run movie_attr.bat to get the movie attribute score, and user_attr.bat to get the user attribute score.
+
+  ​	**Note: When using this batch file, you must pre-install the <u>whole environment</u>, otherwise you will fail!!**
   
 
 ## 参考文献
