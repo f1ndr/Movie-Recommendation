@@ -92,7 +92,7 @@ module
    	其中proxies可自行更改可用爬虫代理，所爬取到的数据存入的文件的文件名，请将open的第一个参数改为自己所需要的名称。如果需要更改爬取数目以增加识别精度，请修改final_page变量为想要的页数（用户评论一页10条，电影评论一页20条）。
   	本脚本文件使用方法可以参考youtube视频：[爬虫演示](https://youtu.be/pgurXdp_-T4)
 
-  ### 爬虫程序说明
+  ### Reptilian Program Description
 
    	Proxies can change the file name of the file in which the crawler agent is available. Please change the first parameter of open to the name you need. If you need to change the number of crawls to increase recognition accuracy, change the final_page variable to the number of pages you want (10 for user reviews and 20 for movie reviews). 
   	Use of this script file can refer to YouTube Video:[Crawler Demo](https://youtu.be/pgurXdp_-T4)
