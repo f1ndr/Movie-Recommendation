@@ -105,7 +105,7 @@ module
   ​	爬取用户影评结果(Crawling User Movie Review Results)![爬取用户影评结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取用户影评结果.png)
 
 
-  ### 语料说明
+### 语料说明
 
   ​	
 
