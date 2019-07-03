@@ -165,7 +165,7 @@ module
   
   * Whleseg.py：Batch Word Segmentation Script
   
-    Demonstration of script usage can be seen as follows:：[Data Pre Processing预处理演示](https://youtu.be/vkSzZB35240)
+    Demonstration of script usage can be seen as follows：[Data Pre Processing预处理演示](https://youtu.be/vkSzZB35240)
     
     ### 所需环境
     
@@ -221,6 +221,12 @@ module
 
   ​	**Note: When using this batch file, you must pre-install the <u>whole environment</u>, otherwise you will fail!!**
   
+## 致谢
+* 感谢@nateprewitt提供的[requests库](https://github.com/kennethreitz/requests)
+* 感谢@Aplicity提供的[keyword_marry算法](https://github.com/Aplicity/keyword_marry)
+* 感谢@jingjingxupku提供的[pkuseg多领域中文分词工具](https://github.com/lancopku/pkuseg-python)
+* 感谢@goto456提供的[停用词表](https://github.com/goto456/stopwords)
+
 
 ## 参考文献
 
