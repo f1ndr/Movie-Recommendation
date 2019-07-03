@@ -58,6 +58,20 @@ module
 * The libraries used are requests library, BS4 library, fake_useragent library and pkuseg library.
 * You also need the PE file execution environment
 
+## 语料库
+
+* 本语料库中分为“电影影评”和“用户影评”
+
+* 其中“用户影评”为一个用户近期以来的十条评论，用以确定用户的属性
+
+* 其中“电影影评”为一个电影的前五页的评论，用以确定电影的属性
+
+  如果需要增加数据，请使用user_reviews.py和movie_reviews.py爬取数据  
+  环境：  
+  python2  
+  requests库  
+  fake_useragent库（可选）
+
 ## corpus
 
 * The corpus is divided into "film reviews" and "user reviews"
@@ -72,19 +86,6 @@ module
   requests  
   fake_useragent（optional）
 
-## environment
-
-* The overall environment required is: Python 2, Python 3
-
-* The libraries used are requests library, BS4 library, fake_useragent library and pkuseg library.
-
-* 其中“电影影评”为一个电影的前五页的评论，用以确定电影的属性
-
-  如果需要增加数据，请使用user_reviews.py和movie_reviews.py爬取数据  
-  环境：  
-  python2  
-  requests库  
-  fake_useragent库（可选）
 
   ### 爬虫程序说明
 
