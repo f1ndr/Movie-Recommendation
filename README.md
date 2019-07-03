@@ -52,31 +52,31 @@ module
 * 其中用到的库有requests库、bs4库、fake_useragent库、pkuseg库
 * 另外还需要pe文件执行环境
 
-## 环境
+## environment
 
-* 整体所需要的环境是：python2、python3
-* 其中用到的库有requests库、bs4库、fake_useragent库、pkuseg库
-* 另外还需要pe文件执行环境
+* The overall environment required is: Python 2, Python 3
+* The libraries used are requests library, BS4 library, fake_useragent library and pkuseg library.
+* You also need the PE file execution environment
 
-## 语料库
+## corpus
 
-* 本语料库中分为“电影影评”和“用户影评”
+* The corpus is divided into "film reviews" and "user reviews"
 
-* 其中“用户影评”为一个用户近期以来的十条评论，用以确定用户的属性
+* Among them, "User Movie Review" is a user's recent ten comments to determine the user's attributes.
 
-* 其中“电影影评”为一个电影的前五页的评论，用以确定电影的属性
+* Among them, "Film Review" is the first five pages of a film's commentary to determine the nature of the film.
 
-  如果需要增加数据，请使用user_reviews.py和movie_reviews.py爬取数据  
-  环境：  
+  If you need to add data, use user_reviews.py and movie_reviews.py to crawl data.
+  environment：  
   python2  
-  requests库  
-  fake_useragent库（可选）
+  requests  
+  fake_useragent（optional）
 
-## 语料库
+## environment
 
-* 本语料库中分为“电影影评”和“用户影评”
+* The overall environment required is: Python 2, Python 3
 
-* 其中“用户影评”为一个用户近期以来的十条评论，用以确定用户的属性
+* The libraries used are requests library, BS4 library, fake_useragent library and pkuseg library.
 
 * 其中“电影影评”为一个电影的前五页的评论，用以确定电影的属性
 
@@ -93,22 +93,16 @@ module
 
   ### 爬虫程序说明
 
-   	其中proxies可自行更改可用爬虫代理，所爬取到的数据存入的文件的文件名，请将open的第一个参数改为自己所需要的名称。如果需要更改爬取数目以增加识别精度，请修改final_page变量为想要的页数（用户评论一页10条，电影评论一页20条）。
-  	本脚本文件使用方法可以参考youtube视频：[爬虫演示](https://youtu.be/pgurXdp_-T4)
+   	Proxies can change the file name of the file in which the crawler agent is available. Please change the first parameter of open to the name you need. If you need to change the number of crawls to increase recognition accuracy, change the final_page variable to the number of pages you want (10 for user reviews and 20 for movie reviews). 
+  	Use of this script file can refer to YouTube Video:[Crawler Demo](https://youtu.be/pgurXdp_-T4)
 
   #### demo
 
-  ​	爬取电影影评![爬取电影影评](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取电影影评.png)
-  ​	爬取结果![爬取结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取结果.png)
-  ​	爬取用户影评![爬取用户影评](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取用户影评.png)
-  ​	爬取用户影评结果![爬取用户影评结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取用户影评结果.png)
-  
-  #### demo
+  ​	爬取电影影评(Climbing Movie Review)![爬取电影影评](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取电影影评.png)
+  ​	爬取结果(Crawling results)![爬取结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取结果.png)
+  ​	爬取用户影评(Climbing User Movie Review)![爬取用户影评](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取用户影评.png)
+  ​	爬取用户影评结果(Crawling User Movie Review Results)![爬取用户影评结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取用户影评结果.png)
 
-  ​	爬取电影影评![爬取电影影评](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取电影影评.png)
-  ​	爬取结果![爬取结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取结果.png)
-  ​	爬取用户影评![爬取用户影评](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取用户影评.png)
-  ​	爬取用户影评结果![爬取用户影评结果](https://github.com/clopen/Movie-Recommendation/blob/master/pic/爬取用户影评结果.png)
 
   ### 语料说明
 
@@ -125,21 +119,20 @@ module
 
   ​	
 
-|          | Source                  | role             | number      |
-| -------- | ----------------------- | ---------------- | ----------- |
-| User comments | Douban, the same user's recent comments| 
-User attributes | 10        |
-| Film Review | Movie Review Douban, the first five pages of the same movie | Used to determine movie attributes | 5\*20 |
+|               | Source                                                      | role                               | number |
+| ------------- | ----------------------------------------------------------- | ---------------------------------- | ------ |
+| User comments | Douban, the same user's recent comments                     | User attributes                    | 10     |
+| Film Review   | Movie Review Douban, the first five pages of the same movie | Used to determine movie attributes | 5*20   |
 
-  每条评论之间以等号串进行分隔。
+  Each comment is separated by an equal sign string.
 
   ### 版权说明
 
   ​	本语料库出于非商业目的，如果有侵权，请在issue下面留言。
   
-  ### 版权说明
+  ### Copyright Notes
 
-  ​	本语料库出于非商业目的，如果有侵权，请在issue下面留言。
+  ​	This corpus is for non-commercial purposes. If there is any infringement, please leave a message under issue.
 
   ## 预处理模块
 
